@@ -13,6 +13,8 @@ const controller = new botkit.Botkit({
   // ...other options
 });
 
+controller.ready(() => console.log("Bot ready for action!"));
+
 controller.on('message', async(bot, message) => {
   console.log("message:");
   console.log(message.text);
