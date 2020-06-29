@@ -14,6 +14,13 @@ const controller = new botkit.Botkit({
 });
 
 controller.on('message', async(bot, message) => {
+  console.log("message:");
+  console.log(message.text);
   await bot.reply(message, 'I heard a message!');
 });
 
+controller.on("direct_mention", (bot, message) => {
+  console.log("direct_mention:");
+  console.log(message.text);
+  Promise.resolve().then(() => bot.reply(message, "hey man what's up"));
+});
