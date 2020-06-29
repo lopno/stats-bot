@@ -1,0 +1,27 @@
+{
+  "name": "stats-bot",
+  "version": "1.0.0",
+  "description": "Slackbot for getting slack statistics",
+  "main": "index.js",
+  "engines": {
+    "node": ">=12"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lopno/stats-bot.git"
+  },
+  "author": "Mikael Midtgaard (lopno)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lopno/stats-bot/issues"
+  },
+  "homepage": "https://github.com/lopno/stats-bot#readme",
+  "dependencies": {
+    "botbuilder-adapter-slack": "^1.0.11",
+    "dotenv": "^8.2.0"
+  }
+}
