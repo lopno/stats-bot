@@ -27,6 +27,7 @@ const adapter = new SlackAdapter({
 
 const controller = new botkit.Botkit({
   adapter,
+  disable_webserver: true
   // ...other options
 });
 
