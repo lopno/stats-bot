@@ -1,4 +1,5 @@
-const { SlackAdapter, Botkit } = require('botbuilder-adapter-slack');
+const { SlackAdapter } = require('botbuilder-adapter-slack');
+const botkit = require('botkit');
 const dotenv = require('dotenv');
 dotenv.config();
 
@@ -7,7 +8,7 @@ const adapter = new SlackAdapter({
   botToken: process.env.SLACK_TOKEN
 });
 
-const controller = new Botkit({
+const controller = new botkit.Botkit({
   adapter,
   // ...other options
 });
